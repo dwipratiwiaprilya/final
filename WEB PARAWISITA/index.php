@@ -24,7 +24,6 @@ $pantaiRenderer = new ResultRenderer($pantaiList);
 $resortRenderer = new ResultRenderer($resortList);
 $tempatBersejarahRenderer = new ResultRenderer($tempatBersejarahList);
 $warisanBudayaRenderer = new ResultRenderer($warisanBudayaList);
-
 ?>
 <head>
 
