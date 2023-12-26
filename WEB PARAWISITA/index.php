@@ -4,19 +4,19 @@
 include 'koneksi.php';
 include 'wisata.php';
 
-$mesinPencarianGunung = new MesinPencarianTabel($conn, "gunung");
+$mesinPencarianGunung = new MesinPencarianTabel($conn, "gunung",'Gunung');
 $gunungList = $mesinPencarianGunung->cariSemua();
 
-$mesinPencarianPantai = new MesinPencarianTabel($conn, "pantai");
+$mesinPencarianPantai = new MesinPencarianTabel($conn, "pantai",'Pantai');
 $pantaiList = $mesinPencarianPantai->cariSemua();
 
-$mesinPencarianTempatBersejarah = new MesinPencarianTabel($conn, "tempat_bersejarah");
+$mesinPencarianTempatBersejarah = new MesinPencarianTabel($conn, "tempat_bersejarah",'TempatBersejarah');
 $tempatBersejarahList = $mesinPencarianTempatBersejarah->cariSemua();
 
-$mesinPencarianWarisanBudaya = new MesinPencarianTabel($conn, "warisan_budaya");
+$mesinPencarianWarisanBudaya = new MesinPencarianTabel($conn, "warisan_budaya",'WarisanBudaya');
 $warisanBudayaList = $mesinPencarianWarisanBudaya->cariSemua();
 
-$mesinPencarianResort = new MesinPencarianTabel($conn, "resort");
+$mesinPencarianResort = new MesinPencarianTabel($conn, "resort",'Resort');
 $resortList = $mesinPencarianResort->cariSemua();
 
 $gunungRenderer = new ResultRenderer($gunungList);
